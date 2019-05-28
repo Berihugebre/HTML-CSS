@@ -42,7 +42,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    display: block;
+   
 }
 nav ul li a:hover{
     background-color:transparent;
