@@ -1,0 +1,187 @@
+body{
+    background-image: repeating-linear-gradient(rgb(170, 182, 170), rgb(171, 212, 20), pink);
+    margin:0;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    /* styling Header */
+    header{
+        border: 1px solid bisque;
+        background-color: rgb(217, 217, 238);
+    }
+    header h1{
+        position: relative;
+        color: aliceblue;
+        overflow: hidden;
+        animation:mymove 5s infinite ; 
+        color: red;
+        text-align: left;
+   }
+   p{
+     text-align: left;
+     padding-left:5px;  
+   }
+   h2{
+       margin-top:0;
+       background-color:red;
+       color:blue;
+       font-size:36px;
+   }
+   h2:hover{
+       text-decoration: double underline white;
+   }
+   /* adding keyframes */
+  /* @keyframes mymove2 { 100% { transform:rotate(360deg); } }*/
+    @keyframes mymove{
+        from {left:0;}
+        to {left:100%;}
+    }
+    h3:hover{
+        font-size: 25px;
+        color:blue;
+    }
+    /*styling Grid-floats */
+ #grid-floats{
+    border: 1px solid transparent;
+    margin:1%;
+}
+#grid-floats .grid-item{
+    border: 1px solid red;
+    height:22em;
+    list-style: none;
+    margin:1%;
+    padding: 2px;
+    box-shadow: 0 0 10px rgb(211, 21, 21); 
+    border-radius: 5px;
+    background-color: rgb(225, 210, 240);
+}
+#grid-floats .grid-item:nth-child(1){
+    width: 79%;
+    }
+#grid-floats .grid-item:nth-child(n+1){
+    float: left;
+    width:45%;
+}
+/*styling flex-grid */
+#grid-flex{
+    border: 1px solid transparent ;
+    display: flex;
+    flex-flow: row wrap;     
+} 
+#grid-flex .grid-item{
+    border: 1px solid green;
+    list-style: none;
+    margin: 1%;
+    width: 45%;
+    height: 22em;
+    padding: 2px;
+    box-shadow: 0 0 10px rgb(17, 224, 10);
+    border-radius: 5px;
+    background-color: aquamarine;
+} 
+#grid-flex .grid-item:first-child{
+    width: 92.5%;
+}
+/* styling the image */
+img{
+    position: relative;
+    text-align: center;
+    width: 5em;
+    height:5em;
+    transition: all .1s ease-in-out;
+ }
+ /* image on hover */
+img:hover{
+   position: relative;
+   transform: scale(3);
+}
+/* Media queries */
+/* desktop */
+@media (min-width: 1281px) {
+    /* grid-float desktop*/
+    #grid-floats .grid-item:nth-child(n){
+        border: 1px solid red;
+        width: 21%;
+        height:22em;
+        list-style: none;
+        margin:1%;
+        padding: 2px;
+    }
+    #grid-floats .grid-item:first-child{
+        width: 44%;
+    }
+    /* grid-flex desktop*/
+    #grid-flex .grid-item{
+        border: 1px solid green;
+        list-style: none;
+        margin: 1%;
+        width: 21%;
+        height: 22em;
+    } 
+    #grid-flex .grid-item:nth-child(1){
+        width:44%;
+    }
+     }
+  /* tablet */
+  @media (min-width: 1025px) and (max-width: 1280px) {
+       /* grid-float tablet*/
+    #grid-floats .grid-item{
+        border: 1px solid red;
+        
+        height:22em;
+        list-style: none;
+        margin:1%;
+        padding: 2px;
+    }
+    #grid-floats .grid-item:first-child{
+        width: 46.5%;
+    }
+    #grid-floats .grid-item:nth-child(2){
+        width: 46.5%;
+    }
+    #grid-floats .grid-item:nth-child(n+3){
+        width: 30%;
+    }
+    /* grid-flex tablet */
+    #grid-flex .grid-item{
+        border: 1px solid green;
+        list-style: none;
+        margin: 1%;
+        width: 30%;
+        height: 22em;
+    } 
+    #grid-flex .grid-item:nth-child(1){
+        width: 46.5%;
+    }
+    #grid-flex .grid-item:nth-child(2){
+        width: 46.5%;
+    }
+  }
+  /* mobile */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* moblie grid-float */
+    #grid-floats .grid-item{
+        border: 1px solid red;
+        width:45%;
+        height:24em;
+        list-style: none;
+        margin:1%;
+        padding: 2px;
+    }
+    #grid-floats .grid-item:first-child{
+        width: 92.5%;
+    }
+    /* moblie grid-flex */
+    #grid-flex .grid-item{
+        border: 1px solid green;
+        list-style: none;
+        margin: 1%;
+        width: 45%;
+        height: 24em;
+    }
+    #grid-flex .grid-item:first-child{
+        width: 92.5%;
+    } 
+    }
+   
+ 
