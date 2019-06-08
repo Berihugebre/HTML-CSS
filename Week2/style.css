@@ -8,14 +8,16 @@ body{
     header{
         border: 1px solid bisque;
         background-color: rgb(217, 217, 238);
+        overflow: hidden;
     }
     header h1{
         position: relative;
         color: aliceblue;
-        overflow: hidden;
         animation:mymove 5s infinite ; 
         color: red;
         text-align: left;
+        font-size:3em;
+        padding:2px;
    }
    p{
      text-align: left;
