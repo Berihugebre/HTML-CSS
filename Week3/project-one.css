@@ -287,3 +287,52 @@ footer ul li{
         text-align: center;
     }
 }
+/* for tablet */
+@media (min-width:1025px) and (max-width:1280px){
+    #menu-toggle{
+        display: none;
+    }
+    #logo-container img{
+        width: 35%;
+    }
+    /* navigations */
+    #nav-right-side-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        margin-right:auto;
+    }
+    #nav-right-side-ul li{
+        display: inline;
+        list-style: none;
+        border-bottom: none;
+        width:10%;
+    }
+    #nav-home-button{
+        position:absolute;
+        padding:10px ;
+    }
+    #search-box-container{
+        position: absolute;
+        margin-left:70%;
+        margin-top:80px;
+        display: inline;
+    }
+    input{
+        width:70%;
+        height: 100%;
+    }
+    button{
+        height: 40px;
+        width: 17%;
+        }
+    #banner{
+        height: 45%;
+    }
+    .items{
+        border:1px solid transparent;
+        width: 48%;
+    }
+
+}
+
