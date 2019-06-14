@@ -217,6 +217,10 @@ footer ul li{
 .language li:hover{
     border:none;
 }
+.language{
+    display: flex;
+    flex-flow:row wrap;
+}
 /* media quires */
 /* for Desktop */
 @media (min-width:1281px){
